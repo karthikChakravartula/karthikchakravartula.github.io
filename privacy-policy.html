@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — D365 Field Editor</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 60px auto; padding: 0 24px; color: #1a1a2e; line-height: 1.7; }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    h2 { font-size: 18px; margin-top: 36px; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 40px; }
+    p, li { font-size: 15px; color: #333; }
+    ul { padding-left: 20px; }
+    a { color: #0077B6; }
+    .highlight { background: #f0f9ff; border-left: 3px solid #0077B6; padding: 12px 16px; border-radius: 4px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="meta">D365 Field Editor Chrome Extension &mdash; Last updated: March 2026</p>
+
+  <div class="highlight">
+    <strong>Summary:</strong> D365 Field Editor does not collect, store, transmit, or share any personal data.
+    All communication happens directly between your browser and your own Dynamics 365 environment.
+  </div>
+
+  <h2>What the Extension Does</h2>
+  <p>D365 Field Editor is a Chrome extension that allows Dynamics 365 / Dataverse users to read and update
+  field values on records directly from the browser, including fields that are not visible on the standard form.
+  It communicates exclusively with the user's own Microsoft Dynamics 365 organization.</p>
+
+  <h2>Data Access</h2>
+  <ul>
+    <li>The extension reads the current page URL to detect the Dynamics 365 entity name and record ID.</li>
+    <li>It calls the Microsoft Dataverse Web API (hosted at your organization's <code>*.dynamics.com</code> domain)
+    to fetch entity metadata and record field values.</li>
+    <li>It sends PATCH requests to the same Dataverse Web API to update field values when you click Save.</li>
+  </ul>
+
+  <h2>Data We Do NOT Collect</h2>
+  <ul>
+    <li>We do not collect any personal data.</li>
+    <li>We do not transmit any data to servers outside your Dynamics 365 organization.</li>
+    <li>We do not use analytics, tracking, or advertising services.</li>
+    <li>We do not store any Dynamics 365 data in external databases or third-party services.</li>
+    <li>We do not share data with any third parties.</li>
+  </ul>
+
+  <h2>Authentication</h2>
+  <p>The extension uses your existing browser session (cookies) to authenticate with Dynamics 365.
+  It does not store, transmit, or have access to your Microsoft account credentials or passwords.</p>
+
+  <h2>Local Storage</h2>
+  <p>The extension may use Chrome's local storage API to cache entity set names (the OData plural names
+  for Dynamics 365 entities) to improve performance. This data is stored only on your local device,
+  never transmitted externally, and can be cleared at any time by removing the extension.</p>
+
+  <h2>Permissions Justification</h2>
+  <ul>
+    <li><strong>host_permissions (*.dynamics.com)</strong> — Required to call the Dataverse Web API on your organization's domain.</li>
+    <li><strong>activeTab / scripting</strong> — Required to read the current record's entity name and ID from the page URL.</li>
+    <li><strong>sidePanel</strong> — Required to display the editor in Chrome's side panel.</li>
+    <li><strong>tabs</strong> — Required to detect when you navigate to a new record so the panel auto-refreshes.</li>
+    <li><strong>cookies</strong> — Required to include your existing Dynamics 365 session when making API calls.</li>
+    <li><strong>storage</strong> — Required to cache entity set name lookups locally for performance.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>If you have questions about this privacy policy, please open an issue on our
+  <a href="https://github.com/yourusername/d365-field-editor/issues">GitHub repository</a>.</p>
+</body>
+</html>
