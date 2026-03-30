@@ -47,26 +47,25 @@
   </ul>
 
   <h2>Authentication</h2>
-  <p>The extension uses your existing browser session (cookies) to authenticate with Dynamics 365.
-  It does not store, transmit, or have access to your Microsoft account credentials or passwords.</p>
-
-  <h2>Local Storage</h2>
-  <p>The extension may use Chrome's local storage API to cache entity set names (the OData plural names
-  for Dynamics 365 entities) to improve performance. This data is stored only on your local device,
-  never transmitted externally, and can be cleared at any time by removing the extension.</p>
+  <p>The extension authenticates with Dynamics 365 using your existing browser session. When the extension
+  makes API calls to your Dynamics 365 organization, the browser automatically includes your existing
+  session credentials — the extension does not read, store, or transmit your credentials or passwords.</p>
 
   <h2>Permissions Justification</h2>
   <ul>
-    <li><strong>host_permissions (*.dynamics.com)</strong> — Required to call the Dataverse Web API on your organization's domain.</li>
-    <li><strong>activeTab / scripting</strong> — Required to read the current record's entity name and ID from the page URL.</li>
-    <li><strong>sidePanel</strong> — Required to display the editor in Chrome's side panel.</li>
-    <li><strong>tabs</strong> — Required to detect when you navigate to a new record so the panel auto-refreshes.</li>
-    <li><strong>cookies</strong> — Required to include your existing Dynamics 365 session when making API calls.</li>
-    <li><strong>storage</strong> — Required to cache entity set name lookups locally for performance.</li>
+    <li><strong>host_permissions (*.dynamics.com)</strong> — Required to call the Dataverse Web API on your
+    organization's domain. Each Dynamics 365 organization has a unique subdomain, so the wildcard is necessary
+    to support all users regardless of their organization URL.</li>
+    <li><strong>scripting</strong> — Required to inject a lightweight content script into the active Dynamics 365
+    page to read the record's entity name and record ID from the page URL.</li>
+    <li><strong>sidePanel</strong> — Required to display the field editor in Chrome's side panel, providing a
+    resizable persistent UI that stays open while working on records.</li>
+    <li><strong>tabs</strong> — Required to detect when the user navigates to a different Dynamics 365 record
+    so the side panel can automatically refresh and load the correct fields.</li>
   </ul>
 
   <h2>Contact</h2>
   <p>If you have questions about this privacy policy, please open an issue on our
-  <a href="https://github.com/yourusername/d365-field-editor/issues">GitHub repository</a>.</p>
+  <a href="https://github.com/karthikChakravartula/d365-field-editor/issues">GitHub repository</a>.</p>
 </body>
 </html>
