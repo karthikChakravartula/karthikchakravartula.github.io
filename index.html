@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karthik Nallani Chakravartula</title>
+<meta name="description" content="Karthik Nallani Chakravartula, Senior Software Engineer and CRM Solution Architect in Austin, Texas. Building on Microsoft Dynamics CRM since 2012, today with Dynamics 365, Power Platform, Azure and AI.">
+<link rel="canonical" href="https://karthikchakravartula.com/">
+<meta property="og:title" content="Karthik Nallani Chakravartula">
+<meta property="og:description" content="Senior Software Engineer and CRM Solution Architect. Dynamics 365, Power Platform, Azure and AI.">
+<meta property="og:url" content="https://karthikchakravartula.com/">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Karthik Nallani Chakravartula",
+  "jobTitle": "Senior Software Engineer and CRM Solution Architect",
+  "worksFor": {"@type": "Organization", "name": "Farm Credit Bank of Texas"},
+  "address": {"@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US"},
+  "url": "https://karthikchakravartula.com/",
+  "sameAs": [
+    "https://www.linkedin.com/in/karthik-n-chakravartula-39b60a51/",
+    "https://pcf.gallery/authors/karthik_chakravartula",
+    "https://sessionize.com/karthiknallanichakravartula/"
+  ]
+}
+</script>
+<style>
+:root{
+  --paper:#FBFCFA; --ink:#1C2B2A; --muted:#55655F; --line:#DCE4DF;
+  --field:#2F6B4F; --field-soft:#E5EFE9; --wheat:#B8901C;
+  --display:"Bricolage Grotesque", system-ui, sans-serif;
+  --body:"Public Sans", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#141C1B; --ink:#E7EEEA; --muted:#9DB0A8; --line:#2A3835;
+    --field:#7FC3A0; --field-soft:#1D2B27; --wheat:#D9B44A;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#141C1B; --ink:#E7EEEA; --muted:#9DB0A8; --line:#2A3835;
+  --field:#7FC3A0; --field-soft:#1D2B27; --wheat:#D9B44A;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--field);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--wheat);outline-offset:3px;border-radius:2px}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+/* nav */
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.mark{font:700 18px/1 var(--display);color:var(--ink);text-decoration:none;margin-right:auto}
+nav.links{display:flex;gap:18px;font-size:15px}
+nav.links a{color:var(--muted);text-decoration:none}
+nav.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font:600 15px/1 var(--body);text-decoration:none;border:1px solid var(--field)}
+.btn.solid{background:var(--field);color:var(--paper)}
+.btn.ghost{color:var(--field)}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+@media (max-width:720px){nav.links{display:none}}
+
+/* hero */
+.hero{position:relative;padding:88px 0 72px;overflow:hidden}
+.rows{position:absolute;inset:0;z-index:0;pointer-events:none;color:var(--field);opacity:.16}
+.rows path{fill:none;stroke:currentColor;stroke-width:1.4}
+.hero .wrap{position:relative;z-index:1}
+h1{font:700 clamp(44px,8.4vw,92px)/.95 var(--display);letter-spacing:-.025em;margin:0 0 28px;max-width:11ch}
+.lede{font-size:clamp(19px,2.2vw,22px);line-height:1.5;max-width:36em;margin:0 0 32px}
+.lede strong{font-weight:600}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;color:var(--muted);font-size:15px;margin:0 0 32px;padding:0;list-style:none}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* sections */
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(28px,4vw,38px)/1.1 var(--display);letter-spacing:-.015em;margin:0 0 28px}
+h3{font:600 18px/1.35 var(--body);margin:0 0 4px}
+.sub{color:var(--muted);font-size:15px;margin:0 0 10px}
+p{margin:0 0 16px;max-width:40em}
+.prose p{max-width:38em}
+
+/* experience timeline: a real sequence, so a rail */
+.timeline{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+.timeline>li{position:relative;padding:0 0 36px 28px}
+.timeline>li:last-child{padding-bottom:0}
+.timeline>li::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--paper);border:2px solid var(--field)}
+.timeline>li.now::before{background:var(--field)}
+.timeline ul{margin:8px 0 0;padding-left:20px}
+.timeline ul li{margin-bottom:6px;max-width:40em}
+
+/* skills: grouped list, no cards */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px 40px}
+.skills h3{font-family:var(--display);font-weight:500;font-size:20px;margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.tags li{background:var(--field-soft);border-radius:6px;padding:3px 10px;font-size:14.5px}
+
+.list{list-style:none;margin:0;padding:0}
+.list>li{padding:18px 0;border-bottom:1px solid var(--line)}
+.list>li:first-child{padding-top:0}
+.list>li:last-child{border-bottom:0}
+.list .links{font-size:15px;display:flex;gap:16px;flex-wrap:wrap}
+.stack{margin-top:12px}
+.list ul.tags{margin-top:10px}
+h2.later{margin-top:48px}
+.status{display:inline-block;font-size:13px;padding:1px 8px;border-radius:999px;border:1px solid var(--wheat);color:var(--wheat);margin-left:6px;vertical-align:2px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+@media (max-width:720px){.two{grid-template-columns:1fr;gap:0}.two>div+div{margin-top:40px}}
+
+/* contact */
+.contact{background:var(--field);color:var(--paper);border-top:0}
+.contact h2{color:var(--paper)}
+.contact p{color:color-mix(in srgb,var(--paper) 85%,transparent)}
+.contact a{color:var(--paper)}
+.contact .btn.solid{background:var(--paper);color:var(--field);border-color:var(--paper)}
+.contact .btn.ghost{color:var(--paper);border-color:var(--paper)}
+.contact ul{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px}
+footer{padding:28px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+@media print{header.top,.rows,.cta{display:none}section{padding:24px 0}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="/">Karthik N. Chakravartula</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#community">Community</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn solid" href="/resume.pdf" download>Resume</a>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <svg class="rows" viewBox="0 0 1200 600" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+    <path d="M520 600 C 700 420, 900 360, 1200 330"/>
+    <path d="M580 600 C 750 440, 940 390, 1200 375"/>
+    <path d="M640 600 C 800 460, 980 420, 1200 420"/>
+    <path d="M700 600 C 850 480, 1020 450, 1200 465"/>
+    <path d="M760 600 C 900 500, 1060 480, 1200 510"/>
+    <path d="M820 600 C 950 520, 1100 510, 1200 555"/>
+    <path d="M460 600 C 650 400, 860 330, 1200 285"/>
+    <path d="M400 600 C 600 380, 820 300, 1200 240"/>
+    <path d="M340 600 C 550 360, 780 270, 1200 195"/>
+    <path d="M280 600 C 500 340, 740 240, 1200 150"/>
+  </svg>
+  <div class="wrap">
+    <h1>Karthik Nallani Chakravartula</h1>
+    <p class="lede">Hi, I'm Karthik. I've been building on Microsoft Dynamics CRM since the CRM 2011 days, and these days I work on the CRM and lending systems at Farm Credit Bank of Texas. Most of my time goes into Dynamics 365, Power Platform and Azure. What I enjoy most is the full journey: understanding the problem, designing the solution, writing the code, and seeing it actually help the people who use it.</p>
+    <ul class="facts">
+      <li>Austin, Texas</li>
+      <li>Senior Software Engineer and CRM Solution Architect</li>
+    </ul>
+    <div class="cta">
+      <a class="btn solid" href="/resume.pdf" download>Download resume (PDF)</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/karthik-n-chakravartula-39b60a51/">LinkedIn profile</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap prose">
+    <h2>About</h2>
+    <p>I've been a CRM engineer my whole career, starting with Dynamics CRM 2011 at xrm.com in 2012. I then spent more than eight years at Collaborate Solutions building CRM solutions for clients in banking, agriculture and the public sector, Farm Credit Bank of Texas among them. In 2021 I joined Farm Credit Bank of Texas directly, where I'm part of the team that builds and looks after its Dynamics 365 platform.</p>
+    <p>Over the years my work has grown from forms and plugins to the bigger picture: integrations, APIs, cloud services, and lately AI features built with RAG and MCP. Outside of work I build free tools for the Dynamics 365 community and volunteer with nonprofits.</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li class="now">
+        <h3>Senior Software Engineer and CRM Solution Architect</h3>
+        <p class="sub">Farm Credit Bank of Texas, Austin. July 2021 to present</p>
+        <ul>
+          <li>Design solutions and build proofs of concept on Dynamics 365 (online and on-premises) and Power Platform for the bank's lending operations.</li>
+          <li>Built the borrower portal's sign-in on Microsoft Entra External ID, with custom authentication extensions on Azure Functions behind Azure API Management.</li>
+          <li>Automated deployments of Dataverse solutions and Power Pages sites with Azure DevOps pipelines and PowerShell, across associations and environments.</li>
+          <li>Build PCF controls, React apps and TypeScript web resources, and integrations over OData and REST APIs.</li>
+          <li>Designed audit-log archival to Azure Blob Storage, with a React app embedded in the CRM so loan officers can still look up history.</li>
+          <li>Prototype AI features with RAG, MCP and Python, and use evals to check their quality before they reach users.</li>
+        </ul>
+        <ul class="tags stack"><li>Dynamics 365</li><li>Power Platform</li><li>Azure Functions</li><li>Microservices</li><li>Azure DevOps</li><li>PowerShell</li><li>TypeScript</li><li>React</li><li>Python</li><li>OData</li><li>PCF</li><li>RAG</li><li>MCP</li><li>Evals</li></ul>
+      </li>
+      <li>
+        <h3>CRM Engineer</h3>
+        <p class="sub">Collaborate Solutions. January 2013 to July 2021</p>
+        <ul>
+          <li>Delivered Dynamics CRM 2013 and 2016 projects for clients including Wells Fargo, Pioneer (DuPont), Alameda County and Farm Credit Bank of Texas.</li>
+          <li>Built plugins and custom logic in .NET and JavaScript, and web apps in ASP.NET MVC, Angular and React.</li>
+          <li>Built data integrations and migrations with SSIS and reports with SSRS, over SQL and NoSQL data stores.</li>
+          <li>Built APIs connecting CRM with clients' other business systems.</li>
+        </ul>
+        <ul class="tags stack"><li>CRM 2013</li><li>CRM 2016</li><li>.NET</li><li>JavaScript</li><li>ASP.NET MVC</li><li>Angular</li><li>React</li><li>SQL</li><li>NoSQL</li><li>SSIS</li><li>SSRS</li><li>APIs</li></ul>
+      </li>
+      <li>
+        <h3>CRM Engineer</h3>
+        <p class="sub">xrm.com. May 2012 to December 2012</p>
+        <ul>
+          <li>Started my career building on Dynamics CRM 2011 with .NET and JavaScript.</li>
+        </ul>
+        <ul class="tags stack"><li>CRM 2011</li><li>.NET</li><li>JavaScript</li></ul>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>CRM and low-code</h3>
+        <ul class="tags"><li>Dynamics 365 CE</li><li>Dynamics CRM 2011 to 2016</li><li>Dataverse</li><li>Power Apps</li><li>Power Automate</li><li>Power Pages</li><li>PCF controls</li><li>Plugins</li></ul>
+      </div>
+      <div>
+        <h3>Cloud and integration</h3>
+        <ul class="tags"><li>Azure Functions</li><li>API Management</li><li>Entra ID</li><li>Entra External ID</li><li>Microservices</li><li>OData</li><li>REST APIs</li></ul>
+      </div>
+      <div>
+        <h3>Engineering</h3>
+        <ul class="tags"><li>C# and .NET</li><li>ASP.NET MVC</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Angular</li><li>Python</li><li>PowerShell</li></ul>
+      </div>
+      <div>
+        <h3>Data and reporting</h3>
+        <ul class="tags"><li>SQL Server</li><li>NoSQL</li><li>SSIS</li><li>SSRS</li><li>Power BI</li></ul>
+      </div>
+      <div>
+        <h3>AI</h3>
+        <ul class="tags"><li>RAG</li><li>MCP</li><li>Evals</li><li>Copilot</li><li>Proofs of concept</li></ul>
+      </div>
+      <div>
+        <h3>Delivery</h3>
+        <ul class="tags"><li>Azure DevOps</li><li>CI/CD pipelines</li><li>GitHub</li><li>Automated testing</li><li>Selenium</li></ul>
+      </div>
+      <div>
+        <h3>Other platforms</h3>
+        <ul class="tags"><li>Salesforce</li><li>HubSpot</li><li>Givebutter</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="community">
+  <div class="wrap two">
+    <div>
+      <h2>Community tools</h2>
+      <ul class="list">
+        <li><h3><a href="https://chromewebstore.google.com/detail/d365-field-editor/mdaalaeelapjdhefiedbmdonciiafbfp">D365 Field Editor</a></h3><p class="sub">Chrome extension. View and edit any Dataverse field on a record, including fields that aren't on the form, from the browser side panel.</p></li>
+        <li><h3><a href="https://chromewebstore.google.com/detail/d365-js-library-editor/pfcmjogegdpdbhfphhnanioadojohimg">D365 JS Library Editor</a></h3><p class="sub">Chrome extension. Edit and publish JavaScript web resources straight from a CRM record, and set breakpoints that open DevTools at the paused line.</p></li>
+        <li><h3><a href="https://pcf.gallery/two-options-radio-button">Two Options Radio Button</a></h3><p class="sub">PCF control on PCF Gallery. Shows a Yes/No column as radio buttons.</p><div class="links"><a href="https://pcf.gallery/authors/karthik_chakravartula">All my PCF Gallery controls</a></div></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Volunteering</h2>
+      <ul class="list">
+        <li><h3>Schoolgroup.org, U.S. Digital Response and NYCDSSG</h3><p class="sub">Volunteer engineering for nonprofits, from CRM and donor systems to integrations and apps.</p><ul class="tags"><li>.NET</li><li>Dynamics 365</li><li>Salesforce</li><li>HubSpot</li><li>Givebutter</li><li>React</li><li>TypeScript</li><li>Python</li></ul></li>
+      </ul>
+      <h2 class="later">Speaking and judging</h2>
+      <ul class="list">
+        <li><h3>Conference speaker</h3><p class="sub">Keynotes at CSCI 2025 and DMBD 2025, and a talk at ACAI 2025.</p><div class="links"><a href="https://sessionize.com/karthiknallanichakravartula/">Sessionize profile</a></div></li>
+        <li><h3>Hackathon and competition judge</h3><p class="sub">Judged student and professional projects, including a Sharda University event and a Colorado health information systems competition.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="writing">
+  <div class="wrap">
+    <h2>Writing</h2>
+    <ul class="list">
+      <li><h3><a href="https://msdynamicsworld.com/story/transforming-dynamics-365-marketing-engagement-automated-business-workflows">Transforming Dynamics 365 Marketing Engagement into Automated Business Workflows</a></h3><p class="sub">MSDynamicsWorld</p></li>
+      <li><h3><a href="https://dzone.com/articles/automating-power-automate-cloud-flows">How to Keep Power Automate Flows On After Deployment</a></h3><p class="sub">DZone, June 2026</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's talk</h2>
+    <p>Open to senior engineering, solution architect and technical leadership roles in Dynamics 365, Power Platform, Azure and AI. The quickest way to reach me is email or LinkedIn.</p>
+    <div class="cta">
+      <a class="btn solid" href="mailto:karthik.chakravartula@gmail.com">Email me</a>
+      <a class="btn ghost" href="/resume.pdf" download>Download resume (PDF)</a>
+    </div>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/karthik-n-chakravartula-39b60a51/">LinkedIn</a></li>
+      <li><a href="https://github.com/karthikchakravartula">GitHub</a></li>
+      <li><a href="https://pcf.gallery/authors/karthik_chakravartula">PCF Gallery</a></li>
+      <li><a href="https://sessionize.com/karthiknallanichakravartula/">Sessionize</a></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="y">2026</span> Karthik Nallani Chakravartula</span>
+    <span><a href="/privacy-policy.html">D365 Field Editor privacy</a> &nbsp; <a href="/D365-JS-Editor-privacy-policy.html">D365 JS Library Editor privacy</a></span>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script data-goatcounter="https://karthikchakravartula.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
