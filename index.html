@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Karthik Nallani Chakravartula</title>
-<meta name="description" content="Karthik Nallani Chakravartula, Senior Software Engineer and CRM Solution Architect in Austin, Texas. Building on Microsoft Dynamics CRM since 2012, today with Dynamics 365, Power Platform, Azure and AI.">
+<meta name="description" content="Karthik Nallani Chakravartula, Senior Software Engineer and Solutions Architect in Austin, Texas. 14+ years across Dynamics 365, .NET and Azure, now building agentic AI with RAG and MCP.">
 <link rel="canonical" href="https://karthikchakravartula.com/">
 <meta property="og:title" content="Karthik Nallani Chakravartula">
-<meta property="og:description" content="Senior Software Engineer and CRM Solution Architect. Dynamics 365, Power Platform, Azure and AI.">
+<meta property="og:description" content="Senior Software Engineer and Solutions Architect. Dynamics 365, .NET, Azure and AI.">
 <meta property="og:url" content="https://karthikchakravartula.com/">
 <meta property="og:type" content="profile">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Karthik Nallani Chakravartula",
-  "jobTitle": "Senior Software Engineer and CRM Solution Architect",
+  "jobTitle": "Senior Software Engineer",
   "worksFor": {"@type": "Organization", "name": "Farm Credit Bank of Texas"},
   "address": {"@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US"},
   "url": "https://karthikchakravartula.com/",
@@ -109,9 +109,15 @@ p{margin:0 0 16px;max-width:40em}
 .list .links{font-size:15px;display:flex;gap:16px;flex-wrap:wrap}
 .stack{margin-top:12px}
 .list ul.tags{margin-top:10px}
+.rlist>li{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px}
+.rlist h3{margin:0}
 h2.later{margin-top:48px}
 .status{display:inline-block;font-size:13px;padding:1px 8px;border-radius:999px;border:1px solid var(--wheat);color:var(--wheat);margin-left:6px;vertical-align:2px}
 
+.areas{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.areas h3{font-family:var(--display);font-weight:500;font-size:21px;margin-bottom:8px}
+.areas p{color:var(--muted);font-size:16px}
+@media (max-width:720px){.areas{grid-template-columns:1fr;gap:24px}}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
 @media (max-width:720px){.two{grid-template-columns:1fr;gap:0}.two>div+div{margin-top:40px}}
 
@@ -136,11 +142,12 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
     <nav class="links" aria-label="Sections">
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
       <a href="#community">Community</a>
       <a href="#writing">Writing</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="btn solid" href="/resume.pdf" download>Resume</a>
+    <a class="btn solid" href="/resume/">Resume</a>
   </div>
 </header>
 
@@ -160,13 +167,14 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
   </svg>
   <div class="wrap">
     <h1>Karthik Nallani Chakravartula</h1>
-    <p class="lede">Hi, I'm Karthik. I've been building on Microsoft Dynamics CRM since the CRM 2011 days, and these days I work on the CRM and lending systems at Farm Credit Bank of Texas. Most of my time goes into Dynamics 365, Power Platform and Azure. What I enjoy most is the full journey: understanding the problem, designing the solution, writing the code, and seeing it actually help the people who use it.</p>
+    <p class="lede">Hi, I'm Karthik. I've been building software for over 14 years, from .NET web applications to Dynamics 365 platforms, and these days I also design AI solutions with RAG and MCP at Farm Credit Bank of Texas. What I enjoy most is the full journey: understanding the problem, designing the solution, writing the code, and seeing it actually help the people who use it.</p>
     <ul class="facts">
       <li>Austin, Texas</li>
-      <li>Senior Software Engineer and CRM Solution Architect</li>
+      <li>Senior Software Engineer and Solutions Architect</li>
+      <li>Open to remote</li>
     </ul>
     <div class="cta">
-      <a class="btn solid" href="/resume.pdf" download>Download resume (PDF)</a>
+      <a class="btn solid" href="/resume/Karthik-Chakravartula-Resume.pdf" download>Download resume (PDF)</a>
       <a class="btn ghost" href="https://www.linkedin.com/in/karthik-n-chakravartula-39b60a51/">LinkedIn profile</a>
       <a class="btn ghost" href="#contact">Get in touch</a>
     </div>
@@ -174,10 +182,22 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 </div>
 
 <section id="about">
-  <div class="wrap prose">
-    <h2>About</h2>
-    <p>I've been a CRM engineer my whole career, starting with Dynamics CRM 2011 at xrm.com in 2012. I then spent more than eight years at Collaborate Solutions building CRM solutions for clients in banking, agriculture and the public sector, Farm Credit Bank of Texas among them. In 2021 I joined Farm Credit Bank of Texas directly, where I'm part of the team that builds and looks after its Dynamics 365 platform.</p>
-    <p>Over the years my work has grown from forms and plugins to the bigger picture: integrations, APIs, cloud services, and lately AI features built with RAG and MCP. Outside of work I build free tools for the Dynamics 365 community and volunteer with nonprofits.</p>
+  <div class="wrap">
+    <h2>What I work on</h2>
+    <div class="areas">
+      <div>
+        <h3>Dynamics 365 and Power Platform</h3>
+        <p>On the platform since CRM 2011. Plugins, workflows, PCF controls, Power Pages, Power Automate, and integrations with loan origination and third-party systems.</p>
+      </div>
+      <div>
+        <h3>Software engineering</h3>
+        <p>C# and .NET APIs, React and Angular front ends, Azure Functions microservices, identity on Microsoft Entra, and CI/CD with Azure DevOps.</p>
+      </div>
+      <div>
+        <h3>AI and automation</h3>
+        <p>Agentic and generative AI with RAG and the Model Context Protocol (MCP), Python services, LLM evals, and workflow automation with Power Automate.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -186,34 +206,35 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
     <h2>Experience</h2>
     <ol class="timeline">
       <li class="now">
-        <h3>Senior Software Engineer and CRM Solution Architect</h3>
+        <h3>Senior Software Engineer</h3>
         <p class="sub">Farm Credit Bank of Texas, Austin. July 2021 to present</p>
         <ul>
-          <li>Design solutions and build proofs of concept on Dynamics 365 (online and on-premises) and Power Platform for the bank's lending operations.</li>
-          <li>Built the borrower portal's sign-in on Microsoft Entra External ID, with custom authentication extensions on Azure Functions behind Azure API Management.</li>
-          <li>Automated deployments of Dataverse solutions and Power Pages sites with Azure DevOps pipelines and PowerShell, across associations and environments.</li>
-          <li>Build PCF controls, React apps and TypeScript web resources, and integrations over OData and REST APIs.</li>
-          <li>Designed audit-log archival to Azure Blob Storage, with a React app embedded in the CRM so loan officers can still look up history.</li>
-          <li>Prototype AI features with RAG, MCP and Python, and use evals to check their quality before they reach users.</li>
+          <li>Design and prototype agentic AI and GenAI solutions using RAG and MCP pipelines that connect LLMs to enterprise data and tools, with Python services and LLM evals to check quality before release.</li>
+          <li>Architected the integration of Dynamics 365 CE with the bank's loan origination system, extending it with plugins, workflows and Power Platform solutions.</li>
+          <li>Designed audit-log archival to Azure Blob Storage that saved thousands of dollars in cloud storage costs, with a React app embedded in the CRM so users can still look up history.</li>
+          <li>Built borrower portal sign-in on Microsoft Entra External ID, with custom authentication extensions in C# Azure Functions behind Azure API Management.</li>
+          <li>Automated deployment of Dataverse solutions and Power Pages sites across environments with Azure DevOps YAML pipelines and PowerShell.</li>
+          <li>Mentor engineers, review code and share work across the team to meet project deadlines.</li>
         </ul>
-        <ul class="tags stack"><li>Dynamics 365</li><li>Power Platform</li><li>Azure Functions</li><li>Microservices</li><li>Azure DevOps</li><li>PowerShell</li><li>TypeScript</li><li>React</li><li>Python</li><li>OData</li><li>PCF</li><li>RAG</li><li>MCP</li><li>Evals</li></ul>
+        <ul class="tags stack"><li>Dynamics 365</li><li>Power Platform</li><li>Python</li><li>RAG</li><li>MCP</li><li>Evals</li><li>C#</li><li>Azure Functions</li><li>React</li><li>TypeScript</li><li>Azure DevOps</li></ul>
       </li>
       <li>
-        <h3>CRM Engineer</h3>
-        <p class="sub">Collaborate Solutions. January 2013 to July 2021</p>
+        <h3>Software Engineer</h3>
+        <p class="sub">Collaborate Solutions (consulting). January 2013 to July 2021</p>
         <ul>
-          <li>Delivered Dynamics CRM 2013 and 2016 projects for clients including Wells Fargo, Pioneer (DuPont), Alameda County and Farm Credit Bank of Texas.</li>
-          <li>Built plugins and custom logic in .NET and JavaScript, and web apps in ASP.NET MVC, Angular and React.</li>
-          <li>Built data integrations and migrations with SSIS and reports with SSRS, over SQL and NoSQL data stores.</li>
-          <li>Built APIs connecting CRM with clients' other business systems.</li>
+          <li><strong>Farm Credit Bank of Texas, 2018 to 2021:</strong> built .NET APIs that connect third-party tools to Dynamics CRM, including one that generates customer numbers from Encompass and creates the account in CRM, plus a self-service account activation app.</li>
+          <li><strong>Wells Fargo, 2016 to 2018:</strong> replaced a legacy customer-data application, automated data extraction from IBM 3270 mainframe screens with .NET, and built an Angular app for grid-based data editing.</li>
+          <li><strong>Pioneer (DuPont), 2015 to 2016:</strong> built the enhancement engine for the Encirca platform, serving farmer crop-yield data through ASP.NET Web API, and set up automated deployments with Octopus Deploy.</li>
+          <li><strong>Alameda County, 2014:</strong> replaced a legacy COBOL HR application with a single-page web app, and built a mobile map app for parks, parking and libraries.</li>
+          <li><strong>Wells Fargo, 2013 to 2015:</strong> moved Web Forms applications to ASP.NET MVC with REST services, secured third-party web services, and rebuilt reporting in SSRS.</li>
         </ul>
-        <ul class="tags stack"><li>CRM 2013</li><li>CRM 2016</li><li>.NET</li><li>JavaScript</li><li>ASP.NET MVC</li><li>Angular</li><li>React</li><li>SQL</li><li>NoSQL</li><li>SSIS</li><li>SSRS</li><li>APIs</li></ul>
+        <ul class="tags stack"><li>CRM 2013</li><li>CRM 2016</li><li>C# and .NET</li><li>ASP.NET MVC</li><li>Web API</li><li>Angular</li><li>JavaScript</li><li>SQL Server</li><li>SSIS</li><li>SSRS</li><li>MongoDB</li></ul>
       </li>
       <li>
-        <h3>CRM Engineer</h3>
-        <p class="sub">xrm.com. May 2012 to December 2012</p>
+        <h3>CRM Developer</h3>
+        <p class="sub">xRM.com. May 2012 to December 2012</p>
         <ul>
-          <li>Started my career building on Dynamics CRM 2011 with .NET and JavaScript.</li>
+          <li>Extended Dynamics CRM 2011 for employee payroll, and built an adapter that turns incoming faxes into support cases automatically.</li>
         </ul>
         <ul class="tags stack"><li>CRM 2011</li><li>.NET</li><li>JavaScript</li></ul>
       </li>
@@ -226,33 +247,49 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
     <h2>Skills</h2>
     <div class="skills">
       <div>
-        <h3>CRM and low-code</h3>
-        <ul class="tags"><li>Dynamics 365 CE</li><li>Dynamics CRM 2011 to 2016</li><li>Dataverse</li><li>Power Apps</li><li>Power Automate</li><li>Power Pages</li><li>PCF controls</li><li>Plugins</li></ul>
+        <h3>AI</h3>
+        <ul class="tags"><li>Agentic AI</li><li>Generative AI</li><li>LLMs</li><li>RAG</li><li>MCP</li><li>Evals</li><li>Prompt engineering</li><li>Copilot</li></ul>
+      </div>
+      <div>
+        <h3>Dynamics 365 and Power Platform</h3>
+        <ul class="tags"><li>Dynamics 365 CE</li><li>CRM 2011 to 2016</li><li>Dataverse</li><li>Power Apps</li><li>Power Automate</li><li>Power Pages</li><li>PCF controls</li><li>Plugins</li></ul>
+      </div>
+      <div>
+        <h3>Languages and frameworks</h3>
+        <ul class="tags"><li>C# and .NET</li><li>.NET Core</li><li>ASP.NET MVC</li><li>Web API</li><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>React</li><li>Angular</li><li>PowerShell</li></ul>
       </div>
       <div>
         <h3>Cloud and integration</h3>
-        <ul class="tags"><li>Azure Functions</li><li>API Management</li><li>Entra ID</li><li>Entra External ID</li><li>Microservices</li><li>OData</li><li>REST APIs</li></ul>
+        <ul class="tags"><li>Azure Functions</li><li>API Management</li><li>Blob Storage</li><li>Entra ID</li><li>Microservices</li><li>REST</li><li>OData</li></ul>
       </div>
       <div>
-        <h3>Engineering</h3>
-        <ul class="tags"><li>C# and .NET</li><li>ASP.NET MVC</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Angular</li><li>Python</li><li>PowerShell</li></ul>
-      </div>
-      <div>
-        <h3>Data and reporting</h3>
-        <ul class="tags"><li>SQL Server</li><li>NoSQL</li><li>SSIS</li><li>SSRS</li><li>Power BI</li></ul>
-      </div>
-      <div>
-        <h3>AI</h3>
-        <ul class="tags"><li>RAG</li><li>MCP</li><li>Evals</li><li>Copilot</li><li>Proofs of concept</li></ul>
+        <h3>Data</h3>
+        <ul class="tags"><li>SQL Server</li><li>MongoDB</li><li>Oracle</li><li>SSIS</li><li>SSRS</li><li>Power BI</li><li>Entity Framework</li></ul>
       </div>
       <div>
         <h3>Delivery</h3>
-        <ul class="tags"><li>Azure DevOps</li><li>CI/CD pipelines</li><li>GitHub</li><li>Automated testing</li><li>Selenium</li></ul>
+        <ul class="tags"><li>Azure DevOps</li><li>CI/CD</li><li>Git and GitHub</li><li>Octopus Deploy</li><li>Jenkins</li><li>Agile</li><li>TDD</li></ul>
       </div>
-      <div>
-        <h3>Other platforms</h3>
-        <ul class="tags"><li>Salesforce</li><li>HubSpot</li><li>Givebutter</li></ul>
-      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap two">
+    <div>
+      <h2>Education</h2>
+      <ul class="list">
+        <li><h3>Master's in Electrical and Computer Engineering</h3><p class="sub">Southern Illinois University Carbondale</p></li>
+        <li><h3>Bachelor's in Electronics and Communications Engineering</h3><p class="sub">Jawaharlal Nehru Technological University, Hyderabad</p></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Certifications</h2>
+      <ul class="list">
+        <li><h3>Microsoft Power Platform Developer</h3></li>
+        <li><h3>Microsoft Certified Technology Specialist (MCTS)</h3></li>
+        <li><h3>Microsoft Dynamics CRM Customization and Configuration</h3><p class="sub">and Extending Microsoft Dynamics CRM</p></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -270,12 +307,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
     <div>
       <h2>Volunteering</h2>
       <ul class="list">
-        <li><h3>Schoolgroup.org, U.S. Digital Response and NYCDSSG</h3><p class="sub">Volunteer engineering for nonprofits, from CRM and donor systems to integrations and apps.</p><ul class="tags"><li>.NET</li><li>Dynamics 365</li><li>Salesforce</li><li>HubSpot</li><li>Givebutter</li><li>React</li><li>TypeScript</li><li>Python</li></ul></li>
-      </ul>
-      <h2 class="later">Speaking and judging</h2>
-      <ul class="list">
-        <li><h3>Conference speaker</h3><p class="sub">Keynotes at CSCI 2025 and DMBD 2025, and a talk at ACAI 2025.</p><div class="links"><a href="https://sessionize.com/karthiknallanichakravartula/">Sessionize profile</a></div></li>
-        <li><h3>Hackathon and competition judge</h3><p class="sub">Judged student and professional projects, including a Sharda University event and a Colorado health information systems competition.</p></li>
+        <li><h3>Schoolgroup.org, U.S. Digital Response, NYC DSSG and Vitas</h3><p class="sub">Volunteer engineering for nonprofits, from CRM and donor systems to integrations and apps.</p><ul class="tags"><li>.NET</li><li>Dynamics 365</li><li>Salesforce</li><li>HubSpot</li><li>Givebutter</li><li>React</li><li>TypeScript</li><li>Python</li></ul></li>
       </ul>
     </div>
   </div>
@@ -294,16 +326,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-betw
 <section id="contact" class="contact">
   <div class="wrap">
     <h2>Let's talk</h2>
-    <p>Open to senior engineering, solution architect and technical leadership roles in Dynamics 365, Power Platform, Azure and AI. The quickest way to reach me is email or LinkedIn.</p>
+    <p>Open to senior engineering, solutions architect and AI roles across Dynamics 365, .NET, Azure and agentic AI, including fully remote. The quickest way to reach me is email or LinkedIn.</p>
     <div class="cta">
       <a class="btn solid" href="mailto:karthik.chakravartula@gmail.com">Email me</a>
-      <a class="btn ghost" href="/resume.pdf" download>Download resume (PDF)</a>
+      <a class="btn ghost" href="/resume/Karthik-Chakravartula-Resume.pdf" download>Download resume (PDF)</a>
     </div>
     <ul>
       <li><a href="https://www.linkedin.com/in/karthik-n-chakravartula-39b60a51/">LinkedIn</a></li>
       <li><a href="https://github.com/karthikchakravartula">GitHub</a></li>
       <li><a href="https://pcf.gallery/authors/karthik_chakravartula">PCF Gallery</a></li>
-      <li><a href="https://sessionize.com/karthiknallanichakravartula/">Sessionize</a></li>
     </ul>
   </div>
 </section>
